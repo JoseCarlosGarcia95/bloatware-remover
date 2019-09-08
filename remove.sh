@@ -1,10 +1,14 @@
 #!/bin/bash
 APPS=(
-    "com.android.chrome" "com.google.android.googlequicksearchbox" "com.google.android.apps.tachyon"
-    "com.google.android.apps.photos" "com.google.android.music" "com.oem.autotest" "net.oneplus.odm.provider"
-    "net.oneplus.odm" "com.oppo.bttestmode" "com.fingerprints.fingerprintsensortest" "com.google.android.videos"
-    "com.oneplus.factorymode.specialtest" "com.oneplus.factorymode"
-    ) 
+    # OnePlus Bloatware
+    "com.oneplus.factorymode" "net.oneplus.odm.provider" "net.oneplus.odm"
+    "com.oem.logkitsdservice" "cn.oneplus.nvbackup" "com.oem.oemlogkit" "com.oneplus.opbugreportlite"
+    "net.oneplus.commonlogtool" "net.oneplus.push" "cn.oneplus.photos"
+
+    # Google Bloatware
+    "com.google.android.music" "com.google.android.apps.tachyon" 
+    "com.google.android.music" "com.google.android.apps.walletnfcrel"
+) 
 
 for APP in ${APPS[@]}; do
     echo "Uninstalling $APP"
